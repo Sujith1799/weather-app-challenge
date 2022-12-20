@@ -1,46 +1,47 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a weather application that allows you to enter a city name and get the current weather and forecast for the next 5 days. It is built with [Create React App](https://github.com/facebook/create-react-app), [TypeScript](https://www.typescriptlang.org/), [Styled Components](https://styled-components.com/), and [Axios](https://github.com/axios/axios).
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+To run this app, you will need to have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) (or [yarn](https://yarnpkg.com/)) installed on your machine.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Clone this repository:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+git clone https://github.com/Sujith1799/weather-app-challenge
+```
 
-### `npm test`
+2. Navigate to the project directory:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+cd weather-app
+```
 
-### `npm run build`
+3. Install the dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Create an account and obtain an API key from [OpenWeather](https://openweather.com/). You can sign up for a free account and use the [Current Weather Data](https://openweather.com/api/weather) and [5 Day / 3 Hour Forecast](https://openweather.com/api/forecast) APIs.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Create a file named `.env` in the root of the project, and add the following line, replacing `[YOUR_API_KEY]` with your actual API key:
 
-### `npm run eject`
+```REACT_APP_WEATHER_API_KEY=[YOUR_API_KEY]```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+6. Start the development server:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```npm start```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The app will be served at [http://localhost:3000](http://localhost:3000).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Building and Deploying
 
-## Learn More
+To build the app for production, run:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```npm run build```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This will create a `build` directory with the compiled production code. You can then serve the app with a static file server or deploy it to a hosting platform such as [Vercel](https://vercel.com/).
