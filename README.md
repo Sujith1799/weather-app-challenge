@@ -2,7 +2,9 @@
 
 This is a weather application that allows you to enter a city name and get the current weather and forecast for the next 5 days. It is built with [Create React App](https://github.com/facebook/create-react-app), [TypeScript](https://www.typescriptlang.org/), [Styled Components](https://styled-components.com/), and [Axios](https://github.com/axios/axios).
 
-[Live demo of the application](https://weather-app-challenge-dun.vercel.app/)
+## Demo
+
+Live demo of the [application](https://weather-app-challenge-dun.vercel.app/)
 
 ## How it looks like
 
