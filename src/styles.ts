@@ -44,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .card {
-    background-color: #e5e2ff;
+    background-color:#dfe1e8;
     border-radius: .4rem;
     overflow: hidden;
     box-shadow: 0 0 40px #00000020;

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const API_KEY = "9a8042f7701a0bb183151a49673192b8";
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
 export const getWeather = async (location: string) => {
   try {
