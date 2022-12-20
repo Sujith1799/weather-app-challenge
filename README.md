@@ -4,11 +4,12 @@ This is a weather application that allows you to enter a city name and get the c
 
 ## How it looks like
 
-![mm3](https://user-images.githubusercontent.com/32943856/208661571-02a81bfe-4f4d-4b39-b874-d98edb71d9c5.gif)
+![mm3](https://user-images.githubusercontent.com/32943856/208663198-26d568e0-c9ad-45d5-bd5d-7dc3c9871da3.gif)
+
 
 ## Prerequisites
 
-To run this app, you will need to have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) (or [yarn](https://yarnpkg.com/)) installed on your machine.
+To run this app, you will need to have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed on your machine.
 
 ## Getting Started
 
