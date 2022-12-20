@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import sunset from "./images/sunset.jpg";
 
 const GlobalStyle = createGlobalStyle`
   html,
@@ -8,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #d3d8ff;
+    background: url(${sunset}) no-repeat center center/cover;
     font-family: 'Lato', sans-serif;
   }
 

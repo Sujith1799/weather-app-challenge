@@ -16,10 +16,10 @@ function SearchBox(props: SearchProps) {
         <form onSubmit={handleCitySubmit} autoComplete="off">
           <h1>Weather in your city</h1>
           <label>
-            City
+            Enter a city name:
             <input
               type="text"
-              placeholder="Enter a city e.g: Melbourne"
+              placeholder="Melbourne"
               name="cityName"
               value={cityName}
               onChange={(e) => setCityName(e.target.value)}

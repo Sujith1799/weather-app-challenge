@@ -1,4 +1,5 @@
 import axios from "axios";
+import { toast } from "react-toastify";
 
 const API_KEY = "9a8042f7701a0bb183151a49673192b8";
 
@@ -9,6 +10,7 @@ export const getWeather = async (location: string) => {
     );
     return res.data;
   } catch (error) {
+    toast.error("Sorry, we couldn't find weather data for this city");
     console.error(error);
   }
 };

@@ -15,7 +15,7 @@ function WeatherForecast(props: WeatherForecastProps) {
   return (
     <div className="card flex-grow-1">
       <WeatherForecastStyles>
-        <h1>Daily Forecast 5 days</h1>
+        <h1>5 Day Forecast</h1>
         <div className="content">
           {forecastData &&
             getDailyForecast(forecastData).list.map(
