@@ -30,11 +30,15 @@ npm install
 
 5. Create a file named `.env` in the root of the project, and add the following line, replacing `[YOUR_API_KEY]` with your actual API key:
 
-```REACT_APP_WEATHER_API_KEY=[YOUR_API_KEY]```
+```
+REACT_APP_WEATHER_API_KEY=[YOUR_API_KEY]
+```
 
 6. Start the development server:
 
-```npm start```
+```
+npm start
+```
 
 The app will be served at [http://localhost:3000](http://localhost:3000).
 
@@ -42,6 +46,8 @@ The app will be served at [http://localhost:3000](http://localhost:3000).
 
 To build the app for production, run:
 
-```npm run build```
+```
+npm run build
+```
 
 This will create a `build` directory with the compiled production code. You can then serve the app with a static file server or deploy it to a hosting platform such as [Vercel](https://vercel.com/).
