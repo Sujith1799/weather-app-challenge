@@ -4,7 +4,7 @@ This is a weather application that allows you to enter a city name and get the c
 
 ## Demo
 
-Live demo of the [application](https://weather-app-challenge-dun.vercel.app/)
+This application is currently hosted on [vercel](https://weather-app-challenge-dun.vercel.app/)
 
 ## How it looks like
 
