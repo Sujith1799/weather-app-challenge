@@ -10,6 +10,12 @@ Live demo of the [application](https://weather-app-challenge-dun.vercel.app/)
 
 ![mm3](https://user-images.githubusercontent.com/32943856/208663198-26d568e0-c9ad-45d5-bd5d-7dc3c9871da3.gif)
 
+## Testing
+
+All the components, API and util functions have tested
+
+<img width="565" alt="image" src="https://user-images.githubusercontent.com/32943856/209125638-db28542b-baa6-4514-8df1-68e82d3a63ad.png">
+
 
 ## Prerequisites
 
