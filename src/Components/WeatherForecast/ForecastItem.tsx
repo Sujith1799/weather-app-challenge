@@ -11,9 +11,9 @@ function ForecastItem(props: ForecastItemProps) {
   const { weatherData } = props;
 
   return (
-    <ForecastItemStyles>
+    <ForecastItemStyles data-testid="forecastItem">
       <h2>{getDayOfWeek(weatherData.dt)}</h2>
-      <div className="temp">
+      <div className="temp" data-testid="temp">
         {formatTemperature(weatherData?.main.temp)}
         <span className="degrees">°C</span>
       </div>
@@ -24,7 +24,9 @@ function ForecastItem(props: ForecastItemProps) {
       />
       <div className="description">{weatherData.weather[0].main}</div>
       <div className="info">
-        <div>Feels like {formatTemperature(weatherData.main.feels_like)}°C</div>
+        <div data-testid="feels-like">
+          Feels like {formatTemperature(weatherData.main.feels_like)}°C
+        </div>
         <div>Humidity: {weatherData?.main.humidity}%</div>
         <div>Wind: {weatherData?.wind.speed} m/s</div>
       </div>

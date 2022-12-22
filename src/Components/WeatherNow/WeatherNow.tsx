@@ -20,7 +20,7 @@ function WeatherNow(props: WeatherNowProps) {
               {weatherData?.name}, {weatherData?.sys.country}
             </div>
             <div className="description">{weatherData?.weather[0].main}</div>
-            <div className="temp">
+            <div className="temp" data-testid="current-weather">
               {formatTemperature(weatherData?.main.temp)}
               <span className="degrees">°C</span>
             </div>

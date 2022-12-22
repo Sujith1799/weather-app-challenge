@@ -13,7 +13,11 @@ function SearchBox(props: SearchProps) {
   return (
     <div className="card flex-grow-1">
       <SearchBoxStyles>
-        <form onSubmit={handleCitySubmit} autoComplete="off">
+        <form
+          onSubmit={handleCitySubmit}
+          autoComplete="off"
+          data-testid="city-form"
+        >
           <h1>Weather in your city</h1>
           <label>
             Enter a city name:
@@ -21,11 +25,12 @@ function SearchBox(props: SearchProps) {
               type="text"
               placeholder="Melbourne"
               name="cityName"
+              data-testid="city-input"
               value={cityName}
               onChange={(e) => setCityName(e.target.value)}
             />
           </label>
-          <button>Search</button>
+          <button data-testid="search-button">Search</button>
         </form>
       </SearchBoxStyles>
     </div>

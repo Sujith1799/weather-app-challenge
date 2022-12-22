@@ -5,18 +5,18 @@ export const formatTemperature = (temp?: number): number | undefined => {
 };
 
 export const getDayOfWeek = (timestamp: number): string => {
-  return new Date(timestamp * 1000).toLocaleDateString("en-US", {
-    weekday: "long",
-  });
+  const date = new Date(timestamp * 1000);
+  return new Intl.DateTimeFormat("en-US", { weekday: "long" }).format(date);
 };
 
 export const getDailyForecast = (forecast: Forecast): Forecast => {
-  const dailyForecast: Forecast = { list: [] };
-  let i;
-
-  for (i = 0; i < forecast.list.length; i += 8) {
-    dailyForecast.list.push(forecast.list[i]);
-  }
-
-  return dailyForecast;
+  return forecast.list.reduce(
+    (dailyForecast: Forecast, forecastData, index) => {
+      if (index % 8 === 0) {
+        dailyForecast.list.push(forecastData);
+      }
+      return dailyForecast;
+    },
+    { list: [] }
+  );
 };
