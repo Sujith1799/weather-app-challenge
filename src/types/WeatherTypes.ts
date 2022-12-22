@@ -1,3 +1,8 @@
+/**
+ * The weather data for a single location at a given time.
+ * This data is retrieved from the OpenWeatherMap API.
+ *
+ */
 export interface Weather {
   weather: {
     main: string;
@@ -22,6 +27,10 @@ export interface Weather {
   dt: number;
 }
 
+/**
+ * The weather forecast data for a single location.
+ * This data is retrieved from the OpenWeatherMap API.
+ */
 export interface Forecast {
   list: Weather[];
 }

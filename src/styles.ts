@@ -1,6 +1,20 @@
 import { createGlobalStyle } from "styled-components";
 import sunset from "./images/sunset.jpg";
 
+/**
+ * A global style that sets the default styles for the app.
+ * This style includes the font family, the background image, and various layout styles.
+ *
+ * @property {string} html, head, body - Styles for the html, head, and body elements.
+ * @property {string} h1 - Styles for h1 elements.
+ * @property {string} form - Styles for form elements.
+ * @property {string} .flex-row - Styles for elements with the 'flex-row' class.
+ * @property {string} .flex-column - Styles for elements with the 'flex-column' class.
+ * @property {string} .flex-grow-1 - Styles for elements with the 'flex-grow-1' class.
+ * @property {string} img.weather-icon - Styles for img elements with the 'weather-icon' class.
+ * @property {string} .card - Styles for elements with the 'card' class.
+ * @property {string} .temp - Styles for elements with the 'temp' class.
+ */
 const GlobalStyle = createGlobalStyle`
   html,
   head,

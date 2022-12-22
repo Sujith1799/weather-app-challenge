@@ -7,6 +7,14 @@ export interface WeatherNowProps {
   weatherData?: Weather;
 }
 
+/**
+ * A component that displays the current weather data for a given city.
+ *
+ * @param {WeatherNowProps} props - The props for the component.
+ * @param {Weather} props.weatherData - The current weather data for the city.
+ *
+ * @returns {ReactElement} A React element representing the weather now data.
+ */
 function WeatherNow(props: WeatherNowProps) {
   const { weatherData } = props;
 

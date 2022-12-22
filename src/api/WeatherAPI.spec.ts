@@ -2,10 +2,12 @@ import axios from "axios";
 import { getWeather, getForecast } from "./WeatherAPI";
 import { toast } from "react-toastify";
 
+// Mock the api
 jest.mock("axios", () => ({
   get: jest.fn().mockResolvedValue({}),
 }));
 
+// Mock the toast component
 jest.mock("react-toastify", () => ({
   toast: {
     error: jest.fn(),

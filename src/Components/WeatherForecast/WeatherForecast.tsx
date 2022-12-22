@@ -9,6 +9,14 @@ export interface WeatherForecastProps {
   forecastData?: Forecast;
 }
 
+/**
+ * A component that displays the weather forecast for a given city.
+ *
+ * @param {WeatherForecastProps} props - The props for the component.
+ * @param {Forecast} props.forecastData - The forecast data for the city.
+ *
+ * @returns {ReactElement} A React element representing the weather forecast.
+ */
 function WeatherForecast(props: WeatherForecastProps) {
   const { forecastData } = props;
 

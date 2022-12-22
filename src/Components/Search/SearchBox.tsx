@@ -7,6 +7,15 @@ export interface SearchProps {
   setCityName: Dispatch<SetStateAction<string>>;
 }
 
+/**
+ * A component that displays a search form for entering a city name.
+ * When the form is submitted, the weather data for the specified city is displayed.
+ *
+ * @param {SearchProps} props - The props for the component.
+ * @param {function} props.handleCitySubmit - A callback function that is called when the form is submitted.
+ * @param {string} props.cityName - The name of the city to search for.
+ * @param {function} props.setCityName - A function that updates the city name.
+ */
 function SearchBox(props: SearchProps) {
   const { handleCitySubmit, cityName, setCityName } = props;
 

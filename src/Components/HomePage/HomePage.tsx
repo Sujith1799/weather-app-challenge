@@ -6,6 +6,11 @@ import WeatherNow from "../WeatherNow/WeatherNow";
 import { getForecast, getWeather } from "../../api/WeatherAPI";
 import { Forecast, Weather } from "../../types/WeatherTypes";
 
+/**
+ * The home page component that decides when to display the weather and forecast data
+ *
+ * @returns {ReactElement} A React element representing the home page.
+ */
 function HomePage() {
   const [cityName, setCityName] = useState<string>("");
   const [weatherData, setWeatherData] = useState<Weather>();

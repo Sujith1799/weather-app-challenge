@@ -22,7 +22,7 @@ const SearchBoxStyles = styled.div`
 
     &:focus {
       outline: none;
-      border: 2px solid #6870d2;
+      border: 1px solid #6870d2;
     }
   }
 

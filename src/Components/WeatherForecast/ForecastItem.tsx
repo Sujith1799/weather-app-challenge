@@ -7,6 +7,14 @@ export interface ForecastItemProps {
   weatherData: Weather;
 }
 
+/**
+ * A component that displays the weather data for a single day in the forecast.
+ *
+ * @param {ForecastItemProps} props - The props for the component.
+ * @param {Weather} props.weatherData - The weather data for the day.
+ *
+ * @returns {ReactElement} A React element representing the forecast item.
+ */
 function ForecastItem(props: ForecastItemProps) {
   const { weatherData } = props;
 
