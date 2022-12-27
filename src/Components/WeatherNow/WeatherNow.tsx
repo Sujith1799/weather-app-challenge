@@ -19,7 +19,7 @@ function WeatherNow(props: WeatherNowProps) {
   const { weatherData } = props;
 
   return (
-    <div className="card">
+    <div className="card" data-testid="weatherNow">
       <WeatherNowStyles>
         <h1>Current weather</h1>
         <div className="content">

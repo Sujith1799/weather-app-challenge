@@ -21,7 +21,7 @@ function WeatherForecast(props: WeatherForecastProps) {
   const { forecastData } = props;
 
   return (
-    <div className="card flex-grow-1">
+    <div className="card flex-grow-1" data-testid="weather-forecast">
       <WeatherForecastStyles>
         <h1 data-testid="forecast">5 Day Forecast</h1>
         <div className="content">
