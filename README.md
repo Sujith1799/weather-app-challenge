@@ -16,6 +16,12 @@ All the components, API and util functions have tested
 
 <img width="565" alt="image" src="https://user-images.githubusercontent.com/32943856/209125638-db28542b-baa6-4514-8df1-68e82d3a63ad.png">
 
+## Automation Testing
+
+End to end automation testing has been added using Playwright. To run e2e tests, use the following command.
+```
+npm run e2e
+```
 
 ## Prerequisites
 
