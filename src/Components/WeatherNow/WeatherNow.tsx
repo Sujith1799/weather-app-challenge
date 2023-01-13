@@ -23,7 +23,7 @@ function WeatherNow(props: WeatherNowProps) {
       <WeatherNowStyles>
         <h1>Current weather</h1>
         <div className="content">
-          <div className="main-info">
+          <div>
             <div className="city">
               {weatherData?.name}, {weatherData?.sys.country}
             </div>

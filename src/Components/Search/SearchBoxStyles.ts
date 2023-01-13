@@ -11,7 +11,7 @@ const SearchBoxStyles = styled.div`
 
   input {
     display: block;
-    padding: 10px 0;
+    padding: 10px 5px;
     margin-top: 10px;
     width: 100%;
     margin-bottom: 35px;
